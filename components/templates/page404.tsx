@@ -23,11 +23,11 @@ export default function Custom404() {
         </div>
 
         <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-4 text-gray-800">
-          We are crafting something <span className="font-medium text-blue-500">beautiful</span>
+          Nothing's <span className="font-medium text-blue-500">here</span>
         </h1>
 
         <div className="text-xs text-gray-400 font-medium uppercase tracking-[0.2em] mb-12">
-          Arriving • 2026
+          Let's try again letter! :)
         </div>
       </main>
 

@@ -1,6 +1,155 @@
 {
-  "home": {
-    "title": "Bem-vindo ao meu site",
-    "subtitle": "Versão em português"
+  "header": {
+    "solutions": "Soluções",
+    "company": "Empresa",
+    "about": "Nos Conheça"
+  },
+  "hero": {
+    "title": "Explore o Universo.",
+    "subtitle": "Gerencie. Cuide. Explore.",
+    "button": "Explorar"
+  },
+  "erp": {
+    "title": "GGIP",
+    "subtitle": "Solução centralizada para sua operação"
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Tudo o que você precisa saber sobre o ecossistema GGIP.",
+    "contact_text": "Ainda tem dúvidas?",
+    "contact_button": "Entre em contato com nosso time →",
+    "items": [
+      { "q": "O que é o GGIP ERP?", "a": "O GGIP é um ecossistema completo de gestão empresarial, integrando desde o controle de tickets e atendimento ao cliente até a gestão financeira e de equipes em uma única interface inteligente." },
+      { "q": "O sistema é personalizável para o meu tipo de negócio?", "a": "Sim! O GGIP foi projetado com uma arquitetura modular, permitindo que você ative ou desative funcionalidades conforme a necessidade da sua operação, seja você uma startup ou uma grande corporação." },
+      { "q": "Como funciona a integração com outras ferramentas?", "a": "Possuímos uma API robusta e integrações nativas com as principais ferramentas do mercado, permitindo que seus dados fluam perfeitamente entre o GGIP e outros softwares que você já utiliza." },
+      { "q": "Os meus dados estão seguros?", "a": "Segurança é nossa prioridade. Utilizamos criptografia de ponta a ponta e servidores de alta disponibilidade com backups automáticos, garantindo que suas informações corporativas estejam sempre protegidas." },
+      { "q": "Existe suporte técnico especializado?", "a": "Com certeza. Oferecemos suporte multicanal e uma central de ajuda completa para garantir que sua equipe tire o máximo proveito da plataforma sem interrupções." }
+    ]
+  },
+  "features": {
+    "title": "Ofereça resoluções rápidas com ferramentas inteligentes",
+    "subtitle": "Potencialize sua operação com automações de ponta, análises detalhadas e comunicação integrada.",
+    "card1_title": "Integração de Equipe",
+    "card1_description": "Conecte todos os departamentos em uma única plataforma colaborativa. Compartilhe informações essenciais e alinhe estratégias em tempo real.",
+    "card2_title": "Coordenação de Tickets",
+    "card2_description": "Centralize e organize as demandas de forma visual e eficiente. Acompanhe o status de cada solicitação e distribua tarefas automaticamente.",
+    "card3_title": "Resultado Garantido",
+    "card3_description": "Acompanhe métricas de sucesso com relatórios precisos. Tenha visibilidade total sobre o desempenho e alcance suas metas com segurança."
+  },
+  "brands": {
+    "trusted_by": "Confiado Por"
+  },
+   "company": {
+    "hero": {
+      "label": "Institucional",
+      "title": "GGIP",
+      "subtitle": "Desenvolvemos soluções tecnológicas voltadas à eficiência operacional, com foco em automação de processos, organização de atendimentos e melhoria da experiência corporativa por meio de nossas soluções."
+    }
+  },
+   "about": {
+    "mission": {
+      "title": "Missão, Visão e Valores",
+      "description": "Nossos princípios orientam a forma como desenvolvemos soluções, conduzimos relações e geramos valor para empresas que buscam mais eficiência, organização e evolução tecnológica.",
+      "mission": {
+        "title": "Missão",
+        "description": "Desenvolver soluções tecnológicas que simplifiquem processos, aumentem a eficiência operacional e contribuam para o crescimento sustentável de empresas."
+      },
+      "vision": {
+        "title": "Visão",
+        "description": "Ser reconhecida como referência nacional em soluções digitais para suporte corporativo, destacando-se pela qualidade, inovação e impacto positivo nas operações dos clientes."
+      },
+      "valuesSection": {
+        "title": "Valores",
+        "description": "Nossos valores sustentam cada decisão, projeto e relacionamento construído pela GGIP."
+      },
+      "values": [
+        {
+          "title": "Inovação contínua",
+          "description": "Buscamos evoluir constantemente nossas soluções, acompanhando as transformações do mercado e as demandas reais das operações corporativas."
+        },
+        {
+          "title": "Compromisso com resultados",
+          "description": "Atuamos com foco em desempenho, eficiência e geração de valor, sempre orientados por entregas consistentes e mensuráveis."
+        },
+        {
+          "title": "Ética e transparência",
+          "description": "Conduzimos nossas relações com responsabilidade, clareza e integridade, fortalecendo a confiança entre empresa, clientes e parceiros."
+        },
+        {
+          "title": "Colaboração",
+          "description": "Valorizamos o trabalho conjunto, a troca de conhecimento e a construção de soluções alinhadas aos objetivos de cada cliente."
+        },
+        {
+          "title": "Responsabilidade social",
+          "description": "Consideramos o impacto das nossas ações e buscamos contribuir de forma positiva para a sociedade e para o ambiente corporativo."
+        },
+        {
+          "title": "Foco no cliente",
+          "description": "Desenvolvemos soluções centradas nas necessidades do cliente, priorizando usabilidade, eficiência e aderência ao contexto operacional."
+        }
+      ]
+    }
+  },
+  "institutional": {
+    "solutions": {
+      "title": "Soluções",
+      "description": "Conheça as soluções desenvolvidas pela GGIP para apoiar diferentes frentes da gestão empresarial com mais controle, integração e eficiência operacional.",
+      "items": [
+        {
+          "title": "GGIP ERM",
+          "description": "Solução voltada à gestão de relacionamentos institucionais, processos internos e organização estratégica das operações empresariais.",
+          "image": "/images/erm.png"
+        },
+        {
+          "title": "GGIP CRM",
+          "description": "Plataforma desenvolvida para fortalecer o relacionamento com clientes, centralizar interações e apoiar equipes comerciais e de atendimento.",
+          "image": "/images/crm.png"
+        },
+        {
+          "title": "GGIP ERP",
+          "description": "Sistema integrado para apoiar a gestão empresarial, conectando áreas operacionais, administrativas e financeiras em um único ambiente.",
+          "image": "/images/erp.png"
+        }
+      ]
+    }
+  },
+  "solutionsPage": {
+    "hero": {
+      "badge": "Soluções",
+      "title": "Soluções desenvolvidas para a evolução da gestão empresarial",
+      "description": "A GGIP desenvolve plataformas voltadas à organização, integração e eficiência operacional, apoiando empresas em diferentes frentes da gestão com soluções estruturadas e acessíveis."
+    },
+    "grid": {
+      "title": "Portfólio de soluções",
+      "description": "Cada solução foi pensada para atender necessidades específicas da operação empresarial, mantendo integração, clareza de processos e melhor aproveitamento dos recursos.",
+      "learnMore": "Saiba mais",
+      "items": [
+        {
+          "title": "GGIP ERM",
+          "description": "Solução voltada à gestão de relacionamentos institucionais, processos internos e organização estratégica das operações empresariais.",
+          "image": "/images/erm.png",
+          "href": "http://poc-ggip.devfatec-campinas.com.br/"
+        },
+        {
+          "title": "GGIP CRM",
+          "description": "Plataforma desenvolvida para fortalecer o relacionamento com clientes, centralizar interações e apoiar equipes comerciais e de atendimento.",
+          "image": "/images/crm.png",
+          "href": "http://poc-ggip.devfatec-campinas.com.br/"
+        },
+        {
+          "title": "GGIP ERP",
+          "description": "Sistema integrado para apoiar a gestão empresarial, conectando áreas operacionais, administrativas e financeiras em um único ambiente.",
+          "image": "/images/erp.png",
+          "href": "http://poc-ggip.devfatec-campinas.com.br/"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Tecnologia aplicada à realidade da sua empresa",
+      "description": "As soluções da GGIP foram desenvolvidas para apoiar empresas que buscam mais controle, integração de processos e evolução operacional com estrutura simples e eficiente.",
+      "button": "Entrar em contato",
+      "email": "contato@ggip.com.br",
+      "subject": "Contato pelo site"
+    }
   }
 }

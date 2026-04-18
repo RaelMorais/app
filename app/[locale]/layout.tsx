@@ -1,7 +1,9 @@
+import Footer from "@/components/organisms/footer";
 import Header from "@/components/organisms/header";
+import { getMessages } from "@/lib/messages";
+import { cn } from "@/lib/utils";
 
-// Adicione esta função no seu layout.tsx
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return [
     { locale: 'pt' },
     { locale: 'en' },
@@ -16,14 +18,21 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params; 
-  
+  // 2. Aguarda o params (Padrão Next.js 15)
+  const { locale } = await params;
+
+  // 3. Busca as mensagens baseada no locale
+  const t = getMessages(locale);
+
   return (
-    <html lang={locale}>
-      <body>
-        <Header/>
+    <>
+      <Header t={t.header} />
+
+      <main className="flex-grow w-full">
         {children}
-      </body>
-    </html>
+      </main>
+
+      <Footer />
+    </>
   );
 }

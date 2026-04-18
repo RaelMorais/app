@@ -3,91 +3,94 @@
 import Link from 'next/link';
 import { useParams, usePathname, useRouter } from 'next/navigation';
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
 } from "@/components/ui/select";
 
-export default function Header() {
-  const router = useRouter();
-  const pathname = usePathname();
-  const params = useParams();
 
-  const currentLocale = (params?.locale as string) || 'pt';
+interface HeaderProps {
+    t: {
+        solutions: string;
+        company: string;
+        about: string;
+    }
+}
 
+export default function Header({ t }: HeaderProps) {
+    const router = useRouter();
+    const pathname = usePathname();
+    const params = useParams();
 
+    const currentLocale = (params?.locale as string) || 'pt';
 
-  const isErrorPage = pathname?.includes('/errors');
-  if (isErrorPage) {
-    return null; 
-  }
+    const isErrorPage = pathname?.includes('/errors');
+    if (isErrorPage) {
+        return null;
+    }
 
-  const handleLocaleChange = (newLocale: string) => {
-    if (!pathname) return;
- 
-    const newPath = pathname.replace(`/${currentLocale}`, `/${newLocale}`);
-    router.push(newPath);
-  };
+    const handleLocaleChange = (newLocale: string) => {
+        if (!pathname) return;
+        const newPath = pathname.replace(`/${currentLocale}`, `/${newLocale}`);
+        router.push(newPath);
+    };
 
-  return (
-    <header className="w-full bg-white/70 backdrop-blur-lg border-b border-gray-100/50 sticky top-0 z-50 animate-in fade-in slide-in-from-top-4 duration-700">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          
-          <div className="flex-shrink-0 flex items-center">
-            <Link 
-              href={`/${currentLocale}/home`} 
-              className="group text-2xl font-extrabold tracking-tighter text-gray-900 transition-transform duration-300 hover:scale-105">
-              GGIP
-              <span className="inline-block text-blue-600 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-0.5">
-                .
-              </span>
-            </Link>
-          </div>
+    return (
+        <header className="fixed top-0 left-0 w-full bg-white/1 backdrop-blur-md z-50 animate-in fade-in duration-700 font-sans">
+            <div className="max-w-[1440px] mx-auto px-6 lg:px-8">
+                <div className="flex justify-between items-center h-20">
 
-          <nav className="hidden md:flex space-x-10">
-            <Link 
-              href={`/${currentLocale}/sobre`} 
-              className="relative group text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors duration-300"
-            >
-              Sobre Nós
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full rounded-full"></span>
-            </Link>
-            
-            <Link 
-              href={`/${currentLocale}/conheca`} 
-              className="relative group text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors duration-300"
-            >
-              Conheça
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full rounded-full"></span>
-            </Link>
-            
-            <Link 
-              href={`/${currentLocale}/contato`} 
-              className="relative group text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors duration-300"
-            >
-              Nos Contate
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full rounded-full"></span>
-            </Link>
-          </nav>
+                    <div className="flex items-center space-x-12">
+                        <div className="flex-shrink-0">
+                            <Link
+                                href={`/${currentLocale}/home`}
+                                className="text-2xl font-bold tracking-tighter text-white hover:opacity-80 transition-opacity"
+                            >
+                                GGIP<span className="text-gray-500">.</span>
+                            </Link>
+                        </div>
 
-          <div className="flex items-center">
-            <Select defaultValue={currentLocale} onValueChange={handleLocaleChange}>
-              <SelectTrigger className="w-[65px] rounded-none bg-gray-50/50 border-gray-200/80 shadow-sm hover:bg-gray-100/80 hover:shadow-md hover:border-blue-200 transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:ring-offset-0">
-                <SelectValue placeholder="Idioma" />
-              </SelectTrigger>
-              <SelectContent className="rounded-none animate-in zoom-in-95 duration-200">
-                <SelectItem value="pt" className="cursor-pointer rounded-xl hover:bg-blue-50/50 transition-colors">🇧🇷 </SelectItem>
-                <SelectItem value="en" className="cursor-pointer rounded-xl hover:bg-blue-50/50 transition-colors">🇺🇸 </SelectItem>
-                <SelectItem value="es" className="cursor-pointer rounded-xl hover:bg-blue-50/50 transition-colors">🇪🇸 </SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
+                        <nav className="hidden md:flex space-x-8">
+                            <Link
+                                href={`/${currentLocale}/solutions`}
+                                className="text-xs uppercase tracking-[0.15em] font-medium text-gray-300 hover:text-white transition-colors duration-300"
+                            >
+                                {t.solutions}
+                            </Link>
 
-        </div>
-      </div>
-    </header>
-  );
+                            <Link
+                                href={`/${currentLocale}/company`}
+                                className="text-xs uppercase tracking-[0.15em] font-medium text-gray-300 hover:text-white transition-colors duration-300"
+                            >
+                                {t.company}
+                            </Link>
+
+                            <Link
+                                href={`/${currentLocale}/noticias`}
+                                className="text-xs uppercase tracking-[0.15em] font-medium text-gray-300 hover:text-white transition-colors duration-300"
+                            >
+                                {t.about}
+                            </Link>
+                        </nav>
+                    </div>
+
+                    <div className="flex items-center space-x-6">
+                        <Select defaultValue={currentLocale} onValueChange={handleLocaleChange}>
+                            <SelectTrigger className="w-auto rounded-none min-w-[50px] bg-transparent border-none text-gray-300 hover:text-white uppercase tracking-[0.1em] text-xs focus:ring-0 focus:ring-offset-0 shadow-none px-2 transition-colors">
+                                <SelectValue placeholder="Lang" />
+                            </SelectTrigger>
+                            <SelectContent className="bg-black/60 backdrop-blur-lg border border-white/10 text-gray-200 rounded-none animate-in zoom-in-95 duration-200">
+                                <SelectItem value="pt" className="cursor-pointer text-xs tracking-widest focus:bg-white/10 focus:text-white rounded-none">PT</SelectItem>
+                                <SelectItem value="en" className="cursor-pointer text-xs tracking-widest focus:bg-white/10 focus:text-white rounded-none">EN</SelectItem>
+                                <SelectItem value="es" className="cursor-pointer text-xs tracking-widest focus:bg-white/10 focus:text-white rounded-none">ES</SelectItem>
+                            </SelectContent>
+                        </Select>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+    );
 }
