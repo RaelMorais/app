@@ -1,18 +1,29 @@
-import Header from '@/components/organisms/header';
-import {locales} from '@/config/i18n';
+import Header from "@/components/organisms/header";
 
+// Adicione esta função no seu layout.tsx
 export function generateStaticParams() {
-  return locales.map((locale) => ({locale}));
+  return [
+    { locale: 'pt' },
+    { locale: 'en' },
+    { locale: 'es' }
+  ];
 }
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
   params
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: Promise<{ locale: string }>;
 }) {
-  return <>
-  <Header/>
-  {children}</>;
+  const { locale } = await params; 
+  
+  return (
+    <html lang={locale}>
+      <body>
+        <Header/>
+        {children}
+      </body>
+    </html>
+  );
 }
