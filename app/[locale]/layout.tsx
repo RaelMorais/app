@@ -1,3 +1,4 @@
+import Header from '@/components/organisms/header';
 import {locales} from '@/config/i18n';
 
 export function generateStaticParams() {
@@ -11,5 +12,7 @@ export default function LocaleLayout({
   children: React.ReactNode;
   params: {locale: string};
 }) {
-  return <>{children}</>;
+  return <>
+  <Header/>
+  {children}</>;
 }
