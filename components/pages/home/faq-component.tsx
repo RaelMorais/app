@@ -21,14 +21,12 @@ interface FaqSectionProps {
 }
 
 export default function FaqSection({ t }: FaqSectionProps) {
-  // Verificação de segurança para evitar erro de undefined
   if (!t || !t.items) return null;
 
   return (
     <section className="w-full bg-black text-white py-24 px-6 font-sans">
       <div className="max-w-3xl mx-auto">
         
-        {/* Cabeçalho do FAQ */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tighter mb-4">
             {t.title}
@@ -38,7 +36,6 @@ export default function FaqSection({ t }: FaqSectionProps) {
           </p>
         </div>
 
-        {/* Componente Accordion do Shadcn */}
         <Accordion type="single" collapsible className="w-full space-y-4">
           {t.items.map((item, index) => (
             <AccordionItem 
@@ -56,7 +53,6 @@ export default function FaqSection({ t }: FaqSectionProps) {
           ))}
         </Accordion>
 
-        {/* Call to Action Final */}
         <div className="mt-20 p-8 border border-white/10 bg-[#0a0a0a] text-center">
           <p className="text-sm text-gray-400 mb-4">{t.contact_text}</p>
           <button className="text-white font-bold hover:underline underline-offset-4">

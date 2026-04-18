@@ -6,16 +6,13 @@ import StarfieldBackgroundDemo from '@/components/ui/starfield';
 import { getMessages } from '@/lib/messages';
 import React from 'react';
 
-// No Next.js 15, o params deve ser tratado como Promise
 export default async function HomePage({ 
   params 
 }: { 
   params: Promise<{ locale: string }> 
 }) {
-  // 1. Recupera o idioma da URL
   const { locale } = await params;
 
-  // 2. Busca as traduções do dicionário (pt.json, en.json, etc)
   const t = getMessages(locale);
 
   return (

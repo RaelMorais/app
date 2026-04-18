@@ -14,7 +14,6 @@ export default function ErpSection({ t }: ErpSectionProps) {
 
       <div className="relative w-full max-w-5xl h-[500px] md:h-[700px] flex flex-col items-center justify-center animate-in fade-in zoom-in-95 duration-1000">
         
-        {/* Camada do Orb */}
         <div className="absolute inset-0 z-0 flex items-center justify-center">
           <div className="absolute inset-0 bg-gradient-to-b from-blue-900/10 to-transparent rounded-full blur-[100px]" />
 

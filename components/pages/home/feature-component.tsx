@@ -21,7 +21,6 @@ interface FeaturesSectionProps {
 }
 
 export default function FeaturesSection({ t }: FeaturesSectionProps) {
-  // Verificação de segurança
   if (!t) return null;
 
   return (
@@ -39,7 +38,6 @@ export default function FeaturesSection({ t }: FeaturesSectionProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
 
-          {/* CARD 1: Integração de Equipe */}
           <Card className="rounded-none bg-[#0a0a0a] border-white/10 text-white overflow-hidden group hover:border-white/20 transition-all duration-300 flex flex-col min-h-[520px]">
             <div className="h-64 w-full relative bg-[#111] flex items-center justify-center overflow-hidden">
               <div className="absolute inset-0 bg-blue-500/10 blur-[50px] rounded-full scale-150 group-hover:bg-blue-500/20 transition-all duration-500" />
@@ -69,7 +67,6 @@ export default function FeaturesSection({ t }: FeaturesSectionProps) {
             </CardContent>
           </Card>
 
-          {/* CARD 2: Coordenação de Tickets */}
           <Card className="rounded-none bg-[#0a0a0a] border-white/10 text-white overflow-hidden group hover:border-white/20 transition-all duration-300 flex flex-col min-h-[520px]">
             <div className="h-64 w-full relative bg-[#111] flex items-center justify-center overflow-hidden">
               <div className="absolute inset-0 bg-indigo-500/10 blur-[50px] rounded-full scale-150 group-hover:bg-indigo-500/20 transition-all duration-500" />
@@ -109,7 +106,6 @@ export default function FeaturesSection({ t }: FeaturesSectionProps) {
             </CardContent>
           </Card>
 
-          {/* CARD 3: Resultado Garantido */}
           <Card className="rounded-none bg-[#0a0a0a] border-white/10 text-white overflow-hidden group hover:border-white/20 transition-all duration-300 flex flex-col min-h-[520px]">
             <div className="h-64 w-full relative bg-[#111] flex items-center justify-center overflow-hidden">
               <div className="absolute inset-0 bg-emerald-500/10 blur-[50px] rounded-full scale-150 group-hover:bg-emerald-500/20 transition-all duration-500" />
