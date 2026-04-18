@@ -152,5 +152,68 @@
       "email": "contato@ggip.com.br",
       "subject": "Contacto desde el sitio"
     }
+  },
+   "teamPage": {
+    "hero": {
+      "badge": "Conózcanos",
+      "title": "Liderazgo estratégico para construir soluciones de alto impacto",
+      "description": "GGIP está formada por un equipo multidisciplinario, orientado por innovación, seguridad, operación y gestión eficiente. Nuestro organigrama refleja la estructura responsable de transformar ideas en soluciones corporativas consistentes."
+    },
+    "orgChart": {
+      "title": "Organigrama ejecutivo",
+      "description": "Nuestra estructura ejecutiva fue organizada para garantizar dirección estratégica, gestión tecnológica, operación eficiente y seguridad en el desarrollo de las soluciones GGIP.",
+      "emailLabel": "Email",
+      "emailAria": "Enviar correo a",
+      "members": [
+        {
+          "name": "Pedro Benetazzo",
+          "role": "CEO & CO-FOUNDER",
+          "meaning": "Dirección ejecutiva y estrategia de la empresa.",
+          "email": "pedro.benetazzo@aluno.cps.sp.gov.br",
+          "image": "/images/team/pedro.png",
+          "level": "top"
+        },
+        {
+          "name": "Israel Morais",
+          "role": "CTO & CO-FOUNDER",
+          "meaning": "Tecnología, arquitectura y evolución de las soluciones.",
+          "email": "israel.morais@aluno.cps.sp.gov.br",
+          "image": "/images/team/israel.jpeg",
+          "level": "top"
+        },
+        {
+          "name": "Giovanna Marcondes",
+          "role": "COO",
+          "meaning": "Operaciones, procesos internos y ejecución estratégica.",
+          "email": "giovanna.marcondes@aluno.cps.sp.gov.br",
+          "image": "/images/team/giovanna.png",
+          "level": "management"
+        },
+        {
+          "name": "Geraldo Neto",
+          "role": "CFIO",
+          "meaning": "Gestión financiera, información y apoyo a la toma de decisiones.",
+          "email": "geraldo.neto@aluno.cps.sp.gov.br",
+          "image": "/images/team/geraldo.png",
+          "level": "management"
+        },
+        {
+          "name": "Emmanuel Fernandes",
+          "role": "CSO",
+          "meaning": "Seguridad de la información, datos y riesgos tecnológicos.",
+          "email": "emmanuel.fernandes@aluno.cps.sp.gov.br",
+            "image": "/images/team/emannuel.jpeg",
+          "level": "management"
+        },
+        {
+          "name": "Vinicius Teixeira",
+          "role": "CLO",
+          "meaning": "Logística, flujo operativo y apoyo a los procesos internos.",
+          "email": "vinicius.teixeira@aluno.cps.sp.gov.br",
+           "image": "/images/team/vinicius.jpeg",
+          "level": "management"
+        }
+      ]
+    }
   }
 }

@@ -68,7 +68,7 @@ export default function Header({ t }: HeaderProps) {
                             </Link>
 
                             <Link
-                                href={`/${currentLocale}/noticias`}
+                                href={`/${currentLocale}/us`}
                                 className="text-xs uppercase tracking-[0.15em] font-medium text-gray-300 hover:text-white transition-colors duration-300"
                             >
                                 {t.about}
