@@ -5,13 +5,13 @@
     "about": "About Us"
   },
   "hero": {
-    "title": "Explore the Universe.",
-    "subtitle": "Manage. Care. Explore.",
+    "title": "Understand the Universe",
+    "subtitle": "See Clearly. Control Fully.",
     "button": "Explore"
   },
   "erp": {
     "title": "GGIP",
-    "subtitle": "Centralized solution for your operation"
+    "subtitle": "Your Strategic Partner for Success"
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -169,7 +169,7 @@
           "role": "CEO & CO-FOUNDER",
           "meaning": "Executive direction and company strategy.",
           "email": "pedro.benetazzo@aluno.cps.sp.gov.br",
-          "image": "/images/team/pedro.png",
+          "image": "/images/team/pedro.jpeg",
           "level": "top"
         },
         {
@@ -184,7 +184,7 @@
           "name": "Giovanna Marcondes",
           "role": "COO",
           "meaning": "Operations, internal processes, and strategic execution.",
-          "email": "giovanna.marcondes@aluno.cps.sp.gov.br",
+          "email": "giovanna.santos19@aluno.cps.sp.gov.br",
           "image": "/images/team/giovanna.png",
           "level": "management"
         },
@@ -192,8 +192,8 @@
           "name": "Geraldo Neto",
           "role": "CFIO",
           "meaning": "Financial management, information, and decision-making support.",
-          "email": "geraldo.neto@aluno.cps.sp.gov.br",
-          "image": "/images/team/geraldo.png",
+          "email": "geraldo.camargo@aluno.cps.sp.gov.br",
+          "image": "/images/team/geraldo.jpeg",
           "level": "management"
         },
         {
@@ -208,7 +208,7 @@
           "name": "Vinicius Teixeira",
           "role": "CLO",
           "meaning": "Logistics, operational flow, and internal process support.",
-          "email": "vinicius.teixeira@aluno.cps.sp.gov.br",
+          "email": "vinicius.oliveira17@aluno.cps.sp.gov.br",
            "image": "/images/team/vinicius.jpeg",
           "level": "management"
         }

@@ -5,13 +5,13 @@
     "about": "Nos Conheça"
   },
   "hero": {
-    "title": "Explore o Universo.",
-    "subtitle": "Gerencie. Cuide. Explore.",
+    "title": "Entenda o Universo",
+    "subtitle": "Veja Claramente. Controle Totalmente.",
     "button": "Explorar"
   },
   "erp": {
     "title": "GGIP",
-    "subtitle": "Solução centralizada para sua operação"
+    "subtitle": "Seu Parceiro Estratégico para o Sucesso"
   },
   "faq": {
     "title": "Perguntas Frequentes",
@@ -169,7 +169,7 @@
           "role": "CEO & CO-FOUNDER",
           "meaning": "Direção executiva e estratégia da empresa.",
           "email": "pedro.benetazzo@aluno.cps.sp.gov.br",
-          "image": "/images/team/pedro.png",
+          "image": "/images/team/pedro.jpeg",
           "level": "top"
         },
         {
@@ -184,7 +184,7 @@
           "name": "Giovanna Marcondes",
           "role": "COO",
           "meaning": "Operações, processos internos e execução estratégica.",
-          "email": "giovanna.marcondes@aluno.cps.sp.gov.br",
+          "email": "giovanna.santos19@aluno.cps.sp.gov.br",
           "image": "/images/team/giovanna.png",
           "level": "management"
         },
@@ -192,8 +192,8 @@
           "name": "Geraldo Neto",
           "role": "CFIO",
           "meaning": "Gestão financeira, informação e apoio à tomada de decisão.",
-          "email": "geraldo.neto@aluno.cps.sp.gov.br",
-          "image": "/images/team/geraldo.png",
+          "email": "geraldo.camargo@aluno.cps.sp.gov.br",
+          "image": "/images/team/geraldo.jpeg",
           "level": "management"
         },
         {
@@ -208,7 +208,7 @@
           "name": "Vinicius Teixeira",
           "role": "CLO",
           "meaning": "Logística, fluxo operacional e suporte aos processos internos.",
-          "email": "vinicius.teixeira@aluno.cps.sp.gov.br",
+          "email": "vinicius.oliveira17@aluno.cps.sp.gov.br",
           "image": "/images/team/vinicius.jpeg",
           "level": "management"
         }

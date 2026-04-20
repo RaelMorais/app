@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google"; 
+import { Inter } from "next/font/google"; 
 import "./globals.css";
-import { cn } from "@/lib/utils"; 
+import { cn } from "@/lib/utils";
 
-const roboto = Roboto({
-  variable: "--font-roboto",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"], 
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -22,8 +22,8 @@ export default function RootLayout({
     <html lang="pt-br" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen font-sans antialiased",
-          roboto.variable
+          "min-h-screen bg-background font-sans antialiased tracking-tight",
+          inter.variable
         )}
       >
         {children}

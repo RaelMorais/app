@@ -18,10 +18,8 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
-  // 2. Aguarda o params (Padrão Next.js 15)
   const { locale } = await params;
 
-  // 3. Busca as mensagens baseada no locale
   const t = getMessages(locale);
 
   return (

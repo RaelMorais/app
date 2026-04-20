@@ -160,7 +160,7 @@ export function StarfieldBackground({
 
   return (
     <div ref={containerRef} className={cn("relative min-h-screen w-full overflow-hidden bg-[#0a0a0f] flex flex-col items-center justify-center", className)}>
-    <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" />
+      <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" />
 
       {/* Subtle blue nebula glow */}
       <div
@@ -199,29 +199,45 @@ interface StarfieldDemoProps {
 }
 
 export default function StarfieldBackgroundDemo({ t }: StarfieldDemoProps) {
-  // Segurança para evitar erro de undefined
   if (!t) return null;
+
+  const scrollToContent = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <StarfieldBackground speed={0.8} count={600}>
       <div className="flex h-full w-full flex-col items-center justify-center px-4 text-center animate-in fade-in zoom-in-95 duration-1000 font-sans">
-        
+
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-white to-blue-400 bg-[length:200%_auto] animate-gradient">
           {t.title}
         </h1>
-        
+
         <p className="text-lg md:text-xl text-gray-300 font-light max-w-2xl mb-10 tracking-wide">
           {t.subtitle}
         </p>
-
         <Button
           size="lg"
-          className="rounded-full bg-white text-black hover:bg-gray-200 hover:scale-105 transition-all duration-300 px-8 py-6 text-sm uppercase tracking-[0.15em] font-bold"
-        >
+          onClick={scrollToContent}
+          className="
+            rounded-none 
+            bg-transparent 
+            border border-white/20 
+            text-white 
+            backdrop-blur-sm
+            hover:bg-white hover:text-black 
+            active:scale-95 
+            transition-all duration-300 
+            px-10 py-6 
+            text-xs uppercase tracking-[0.2em] font-bold
+            hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]">
           {t.button}
         </Button>
 
       </div>
     </StarfieldBackground>
-  )
+  );
 }
