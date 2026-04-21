@@ -215,5 +215,12 @@
         }
       ]
     }
+  },
+  "stackSection": {
+    "title": "Alcanza las Estrellas",
+    "brandName": "AjudaAI",
+    "description": " es el propulsor que transforma problemas complejos en soluciones a la velocidad de la luz.",
+    "button": "Despegar",
+    "enhancedBy": "Enhanced By"
   }
 }

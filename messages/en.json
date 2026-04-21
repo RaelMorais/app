@@ -214,5 +214,12 @@
         }
       ]
     }
+  },
+  "stackSection": {
+    "title": "Reach for the Stars",
+    "brandName": "AjudaAI",
+    "description": " is the thruster that transforms complex problems into solutions at the speed of light.",
+    "button": "Take Off",
+    "enhancedBy": "Enhanced By"
   }
 }

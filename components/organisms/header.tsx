@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { HeartHandshake, Menu, Sparkles, X } from "lucide-react";
 
 import {
     Select,
@@ -83,6 +83,18 @@ export default function Header({ t }: HeaderProps) {
                                 className="text-xs font-medium uppercase tracking-[0.15em] text-gray-300 transition-colors duration-300 hover:text-white"
                             >
                                 {t.about}
+                            </Link>
+                            <Link
+                                href={`/${currentLocale}/helpdesk`}
+                                className="group flex items-center gap-2 text-xs font-medium uppercase tracking-[0.15em] transition-all duration-300"
+                            >
+                                <HeartHandshake
+                                    className="h-4 w-4 text-gray-400 transition-all duration-300 group-hover:text-blue-500 group-hover:animate-pulse"
+                                />
+
+                                <span className="text-gray-300 transition-all duration-500 group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-blue-800 group-hover:bg-[length:200%_auto] group-hover:bg-clip-text group-hover:text-transparent group-hover:animate-gradient">
+                                    Ajuda AI
+                                </span>
                             </Link>
                         </nav>
                     </div>
@@ -188,10 +200,9 @@ export default function Header({ t }: HeaderProps) {
                                 className={`
                                     absolute inset-0 flex items-center justify-center
                                     transition-all duration-300 ease-out
-                                    ${
-                                        isMenuOpen
-                                            ? "scale-75 rotate-90 opacity-0"
-                                            : "scale-100 rotate-0 opacity-100"
+                                    ${isMenuOpen
+                                        ? "scale-75 rotate-90 opacity-0"
+                                        : "scale-100 rotate-0 opacity-100"
                                     }
                                 `}
                             >
@@ -202,10 +213,9 @@ export default function Header({ t }: HeaderProps) {
                                 className={`
                                     absolute inset-0 flex items-center justify-center
                                     transition-all duration-300 ease-out
-                                    ${
-                                        isMenuOpen
-                                            ? "scale-100 rotate-0 opacity-100"
-                                            : "scale-75 -rotate-90 opacity-0"
+                                    ${isMenuOpen
+                                        ? "scale-100 rotate-0 opacity-100"
+                                        : "scale-75 -rotate-90 opacity-0"
                                     }
                                 `}
                             >
@@ -248,6 +258,18 @@ export default function Header({ t }: HeaderProps) {
                         className="text-xs font-medium uppercase tracking-[0.15em] text-gray-300 transition-colors duration-300 hover:text-white"
                     >
                         {t.about}
+                    </Link>
+                    <Link
+                        href={`/${currentLocale}/helpdesk`}
+                        className="group flex items-center gap-2 text-xs font-medium uppercase tracking-[0.15em] transition-all duration-300"
+                    >
+                        <Sparkles
+                            className="h-4 w-4 text-gray-400 transition-all duration-300 group-hover:text-blue-500 group-hover:animate-pulse"
+                        />
+
+                        <span className="text-gray-300 transition-all duration-500 group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-blue-800 group-hover:bg-[length:200%_auto] group-hover:bg-clip-text group-hover:text-transparent group-hover:animate-gradient">
+                            Ajuda AI!
+                        </span>
                     </Link>
                 </nav>
             </div>
